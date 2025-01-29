@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(228,236,241);
+    background: radial-gradient(circle, rgba(228,236,241,1) 0%, rgba(51,169,217,1) 52%);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4CA1AF;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button[type="submit"] {
+    background: #4CA1AF;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #2C3E50;
+}
+
+button[type="reset"] {
+    background: #e74c3c;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background: #c0392b;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+.result.show {
+    display: block;
+}
+
+.result h2 {
+    margin-bottom: 15px;
+    color: #2C3E50;
+}
+
+.bmi-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bmi-category {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.bmi-description {
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

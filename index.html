@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <form id="bmiForm">
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select>
+                <div class="error" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" step="0.1" placeholder="Masukkan berat badan" required>
+                <div class="error" id="weightError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" step="0.1" placeholder="Masukkan tinggi badan" required>
+                <div class="error" id="heightError"></div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Hitung BMI</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <div class="result" id="result">
+            <h2>Hasil Perhitungan BMI</h2>
+            <div class="bmi-value" id="bmiValue"></div>
+            <div class="bmi-category" id="bmiCategory"></div>
+            <div class="bmi-description" id="bmiDescription"></div>
+        </div>
+    </div>
+
+<!-- js -->
+ <script src="js/script.js"></script>
+</body>
+</html>
